@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AnyNHibernate.Domains.Workflow
+namespace AnyNHibernate.Domains.Workflows
 {
     public class Workflow : Entity
     {
@@ -17,10 +17,18 @@ namespace AnyNHibernate.Domains.Workflow
         public virtual string Name { get; protected set; }
         public virtual IList<WorkflowTask> Tasks { get; protected set; }
 
-        public virtual void AddTasks(WorkflowTask task)
+        public virtual void AddTask(WorkflowTask task)
         {
             task.Workflow = this;
             Tasks.Add(task);
+        }
+
+        public virtual void ReplaceTasks(IEnumerable<WorkflowTask> tasks)
+        {
+            foreach (WorkflowTask task in tasks)
+            {
+                AddTask(task);
+            }
         }
     }
 }

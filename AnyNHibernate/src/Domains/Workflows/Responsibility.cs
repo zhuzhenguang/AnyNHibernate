@@ -1,4 +1,4 @@
-﻿namespace AnyNHibernate.Domains.Workflow
+﻿namespace AnyNHibernate.Domains.Workflows
 {
     public class Responsibility : Entity
     {

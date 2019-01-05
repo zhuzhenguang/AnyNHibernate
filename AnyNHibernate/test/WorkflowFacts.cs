@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using AnyNHibernate.Domains.Workflow;
+using AnyNHibernate.Domains.Workflows;
 using Xunit;
 
 namespace AnyNHibernate.test
@@ -17,8 +17,8 @@ namespace AnyNHibernate.test
             endTask.DependsOn(initialTask);
 
             var workflow = new Workflow("workflow");
-            workflow.AddTasks(initialTask);
-            workflow.AddTasks(endTask);
+            workflow.AddTask(initialTask);
+            workflow.AddTask(endTask);
 
             ResolveSession().Save(workflow);
 

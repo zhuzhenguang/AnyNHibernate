@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AnyNHibernate.Domains.Workflow
+namespace AnyNHibernate.Domains.Workflows
 {
     public class WorkflowTask : Entity
     {

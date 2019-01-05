@@ -1,8 +1,7 @@
-﻿using AnyNHibernate.Domains;
-using AnyNHibernate.Domains.Workflow;
+﻿using AnyNHibernate.Domains.Workflows;
 using FluentNHibernate.Mapping;
 
-namespace AnyNHibernate.Infrastructures
+namespace AnyNHibernate.Infrastructures.Mappings
 {
     public class WorkflowMapping : ClassMap<Workflow>
     {

@@ -97,16 +97,25 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Applications\ITransactionExecutor.cs" />
+    <Compile Include="src\Applications\Workflows\Requests\CreateWorkflowRequest.cs" />
+    <Compile Include="src\Applications\Workflows\Requests\CreateWorkflowTaskRequest.cs" />
+    <Compile Include="src\Applications\TransactionExecutor.cs" />
+    <Compile Include="src\Applications\Workflows\WorkflowApplicationService.cs" />
+    <Compile Include="src\Applications\Workflows\WorkflowFactory.cs" />
     <Compile Include="src\Domains\Entity.cs" />
-    <Compile Include="src\Domains\Workflow\Responsibility.cs" />
-    <Compile Include="src\Domains\Workflow\Workflow.cs" />
-    <Compile Include="src\Domains\Workflow\WorkflowTask.cs" />
-    <Compile Include="src\Domains\Workflow\WorkflowTaskDependsOn.cs" />
-    <Compile Include="src\Infrastructures\ResponsibilityMapping.cs" />
-    <Compile Include="src\Infrastructures\WorkflowMapping.cs" />
-    <Compile Include="src\Infrastructures\WorkflowTaskDependsOnMapping.cs" />
-    <Compile Include="src\Infrastructures\WorkflowTaskMapping.cs" />
+    <Compile Include="src\Domains\Workflows\IWorkflowRepository.cs" />
+    <Compile Include="src\Domains\Workflows\Responsibility.cs" />
+    <Compile Include="src\Domains\Workflows\Workflow.cs" />
+    <Compile Include="src\Domains\Workflows\WorkflowTask.cs" />
+    <Compile Include="src\Domains\Workflows\WorkflowTaskDependsOn.cs" />
+    <Compile Include="src\Infrastructures\Mappings\ResponsibilityMapping.cs" />
+    <Compile Include="src\Infrastructures\Mappings\WorkflowMapping.cs" />
+    <Compile Include="src\Infrastructures\WorkflowRepository.cs" />
+    <Compile Include="src\Infrastructures\Mappings\WorkflowTaskDependsOnMapping.cs" />
+    <Compile Include="src\Infrastructures\Mappings\WorkflowTaskMapping.cs" />
     <Compile Include="test\FactBase.cs" />
+    <Compile Include="test\WorkflowApplicationServiceFacts.cs" />
     <Compile Include="test\WorkflowFacts.cs" />
   </ItemGroup>
   <ItemGroup>

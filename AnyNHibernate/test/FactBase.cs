@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Common;
 using AnyNHibernate.Domains;
-using AnyNHibernate.Domains.Workflow;
+using AnyNHibernate.Domains.Workflows;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
